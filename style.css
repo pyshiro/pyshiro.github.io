@@ -1,0 +1,21 @@
+div{
+
+width:1580px; 
+height:50px;
+border:1px solid #323232; 
+background:#323232;
+
+}
+img {
+				position: absolute;
+				left: 340px;
+				top: 250px
+			}
+h2{
+
+position: fixed; 
+    left: 690px;   
+    top: 0px;     
+}
+
+body{background:	#F5F5F5} 

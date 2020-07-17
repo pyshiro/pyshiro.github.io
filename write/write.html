@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" />
+        <title>Pyshrio-Markdown</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="../css/editormd.css" />
+        <link rel="shortcut icon" href="http://a1.qpic.cn/psc?/V12dzrl316sB15/8QV3e.xOxaOcAjy1WH0k.hk0ASLS7WMzoTFi7pV9kY2ptp3uKHpsxnmjCQZZ1TPaeLVa2yAdBB4FhV2LPKlIpQ!!/c&ek=1&kp=1&pt=0&bo=vgFyAb4BcgEDGTw!&tl=1&vuin=1011109310&tm=1594904400&sce=60-2-2&rf=0-0" type="image/x-icon" />
+    </head>
+    <body>
+        <div id="layout">
+            <header>
+
+            </header>
+            <div id="test-editormd">
+                <textarea style="display:none;"># Welcome!
+Pyshiro was created by editor.md Wish you a better markdown editing experience!
+</textarea>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="../editormd.min.js"></script>
+        <script type="text/javascript">
+			var testEditor;
+
+            $(function() {
+                testEditor = editormd("test-editormd", {
+                    width   : "96%",
+                    height  : 700,
+                    syncScrolling : "single",
+                    path    : "../lib/"
+                });
+                
+                /*
+                // or
+                testEditor = editormd({
+                    id      : "test-editormd",
+                    width   : "90%",
+                    height  : 640,
+                    path    : "../lib/"
+                });
+                */
+            });
+        </script>
+    </body>
+</html>
